@@ -1,0 +1,224 @@
+.inactive {
+  display: none;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.error-border {
+  border: 2px solid red;
+}
+
+body {
+  display: flex;
+}
+
+.section1,.section2,.section3 {
+  width: 33%;
+  border-right: medium solid #14A44D;
+  padding: 5px;
+}
+
+.section2 h2, .section3 h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: normal;
+}
+.section3 {
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#elementosHTML input:disabled {
+  border-color: red;
+  background-color: yellow;
+}
+#elementosHTML input:disabled::placeholder {
+  color: red;
+  font-weight: bold;
+}
+
+#elementosHTML {
+  border: 2px ridge lightblue;
+  border-radius: 7px;
+  width: 300px;
+  padding: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+}
+
+#elementosHTML label,input {
+  position: relative;
+  left: 12%;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#elementosHTML input {
+  width: 200px;
+  padding: 7px;
+}
+
+#elementosHTML p {
+  text-align: center;
+  font-size: 120%;
+} 
+
+#elementosHTML button {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 218px;
+  position: relative;
+  left: 12%;  
+  border: none;
+  border-radius: 5px;
+  font-size: 90%;
+  cursor: pointer;
+}
+
+#elementosHTML #button1 {
+  background-color: #14A44D;
+  color: white;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#elementosHTML #button2 {
+  background-color: #3B71CA;
+  color: white;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Styles for section3*/
+#propiedadesCSS {
+  border: 2px ridge lightblue;
+  border-radius: 7px;
+  width: 330px;
+  padding: 30px 15px 15px 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+}
+
+#propiedadesCSS label,input, select, textarea {
+  position: relative;
+  left: 14%;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#propiedadesCSS input, select, textarea {
+  width: 220px;
+  padding: 7px;
+}
+
+select {
+  width: 238px !important;
+}
+textarea {
+  height: 100px;
+  color: blue;
+  font-weight: bold;
+}
+
+#propiedadesCSS button {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 238px;
+  position: relative;
+  left: 14%;  
+  border: none;
+  border-radius: 5px;
+  font-size: 90%;
+  cursor: pointer;
+}
+
+#propiedadesCSS #button3 {
+  background-color: #14A44D;
+  color: white;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#propiedadesCSS textarea:disabled {
+  border-color: #14A44D;
+}
+
+#propiedadesCSS textarea:disabled::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+
+@media (max-width: 1040px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section1,.section2,.section3 {
+    width: 100%;
+    border: none;
+    border-bottom: medium solid #14A44D;
+    
+  }
+  .section3 {
+    border: none;
+  }
+  #elementosHTML {
+    border: 2px ridge lightblue;
+    border-radius: 7px;
+    width: 280px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+  }
+  #elementosHTML label,input {
+    position: relative;
+    left: 10%;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #elementosHTML button {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 218px;
+    position: relative;
+    left: 10%;  
+    border: none;
+    border-radius: 5px;
+    font-size: 90%;
+    cursor: pointer;
+  }
+  #propiedadesCSS {
+    border: 2px ridge lightblue;
+    border-radius: 7px;
+    width: 280px;
+    padding: 30px 15px 15px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+  }
+  #propiedadesCSS label,input, select, textarea {
+    position: relative;
+    left: 9%;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #propiedadesCSS button {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 238px;
+    position: relative;
+    left: 9%;  
+    border: none;
+    border-radius: 5px;
+    font-size: 90%;
+    cursor: pointer;
+  }
+}

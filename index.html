@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Playground</title>
+  <link href="./styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <section class="section1">
+    <form id="elementosHTML">
+      <p>Create an element through javascript</p>
+      <div class="contenedor1">
+        <label for="create">HTML Element</label> <br>
+        <input id="create" type="text" placeholder="input, img, p, hr, div"><br> 
+        <label for="content">Content (optional)</label> <br>
+        <input id="content" type="text" placeholder="Some text, emoji"><br> 
+        <label for="attribute">Attribute (optional)</label><br>
+        <input id="attribute" class="attribute" type="text" placeholder="src, width, href, style, target"><br> 
+        <label for="value">Value</label><br>
+        <input id="value" class="value" type="text" placeholder="50px, color:red, _blank">
+      </div><br>
+      <button id="button1" type="button">Create HTML Element</button> <br>
+      <button id="button2" type="button">Add another attribute</button>
+    </form>
+  </section>
+  <section class="section2">
+    <h2>Your HTML goes here</h2>
+  </section>
+  <section class="section3">
+    <h2>Get the CSS styles values of your HTML elements</h2>
+    <form id="propiedadesCSS">
+      <label for="listaElementos">Select an HTML Element</label><br>
+      <select id="listaElementos">
+        <option value="0">Click here</option>
+      </select><br>
+      <label for="cssStyle">Write a CSS property</label><br>
+      <input id="cssStyle" type="text" placeholder="display, color, font-weight"><br>
+      <label for="result">Result goes here</label><br>
+      <textarea id="result" disabled placeholder="The value of your CSS property..."></textarea><br><br>
+      <button id="button3" type="button">Get CSS style value</button>
+    </form>
+  </section> 
+
+  <script src="./main.js"></script>
+</body>
+</html>
