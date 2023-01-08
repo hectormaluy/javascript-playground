@@ -102,7 +102,7 @@ function disableContent() {
   const inputContent = document.getElementById("content");
   const element = document.querySelector("#create").value.toLowerCase().trim();
 
-  let validElements = ["", "p", "div", "span", "h1", "h2", "h3", "h4", "h5", "h6", "span", "i", "strong", "q", "blockquote", "ins", "mark", "section", "article", "aside", "header", "footer", "a"];
+  let validElements = ["", "p", "div", "span", "h1", "h2", "h3", "h4", "h5", "h6", "span", "i", "strong", "q", "blockquote", "ins", "mark", "section", "article", "aside", "header", "footer", "a", "b", "em"];
 
   for(let item of validElements) {
     if (item === element) {
@@ -145,9 +145,10 @@ function addOptions() {
   const section2 = document.querySelector(".section2");
   const selectElement = document.querySelector("select");
   const childrenList = section2.children;
+  const selectChildrenTotal = selectElement.children.length;
 
-  if(childrenList.length > 1 && selectElement.children.length == 1) {
-    for(let i = 1; i < childrenList.length; i++) {
+  if(selectChildrenTotal !== childrenList.length) {
+    for(let i = selectChildrenTotal; i < childrenList.length; i++) {
       const elementName = childrenList[i].nodeName.toLowerCase();
       const option = document.createElement("option");
       option.setAttribute("value", i);
