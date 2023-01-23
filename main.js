@@ -102,7 +102,7 @@ function disableContent() {
   const inputContent = document.getElementById("content");
   const element = document.querySelector("#create").value.toLowerCase().trim();
 
-  let validElements = ["", "p", "div", "span", "h1", "h2", "h3", "h4", "h5", "h6", "span", "i", "strong", "q", "blockquote", "ins", "mark", "section", "article", "aside", "header", "footer", "a", "b", "em"];
+  let validElements = ["", "p", "div", "span", "h1", "h2", "h3", "h4", "h5", "h6", "span", "i", "strong", "q", "blockquote", "ins", "mark", "section", "article", "aside", "header", "footer", "a", "b", "em", "li", "figcaption", "label", "legend", "option", "pre", "code", "caption", "td", "summary", "dt", "dd", "del", "small", "textarea", "var", "sub", "sup"];
 
   for(let item of validElements) {
     if (item === element) {
